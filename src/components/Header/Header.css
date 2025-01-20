@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap');
+
+.text-bold {
+  font-weight: bold;
+}
+
+.header__right__buttons  {
+  border: none;
+  background: none;
+  color: #7f7e7e;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.header__right__buttons:hover {
+  color: #000;
+  transition: color 0.3s ease;
+}
+
+@media (max-width: 992px) {
+  .header__right__buttons {
+    display: none !important;
+  }
+}

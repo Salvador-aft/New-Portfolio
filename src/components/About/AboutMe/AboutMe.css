@@ -1,0 +1,140 @@
+.about-me {
+  display: flex;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  font-family: 'Raleway', sans-serif;
+}
+
+.about-me__content {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 24px;
+  padding: 61px 0 61px 0;
+  text-align: left;
+}
+
+.about-me__content__title h1 {
+  margin: 0;
+  font-weight: bold;
+  font-size: 52px;
+  text-align: left;
+}
+
+.about-me__content__description h3 {
+  margin: 0;
+  font-size: 22px;
+  font-weight: 300;
+  text-align: left;
+}
+
+.about-me__content__buttons {
+  display: flex;
+  gap: 12px;
+}
+
+.about-me__content__button {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 0 20px;
+  font-size: 16px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  border: none;
+  background-color: transparent;
+  color: black;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.about-me__content__button:hover {
+  color: black;
+}
+
+.about-me__content__buttons a:first-child {
+  padding-left: 0;
+}
+
+.button-icon {
+  width: 16px;
+  height: 16px;
+}
+
+.about-me__photo {
+  margin-left: auto;
+}
+
+.about-me__photo__image {
+  width: 368px;
+  height: 368px;
+  border-radius: 50%;
+}
+
+@media (max-width: 992px) {
+  .about-me__content {
+    gap: 8px;
+  }
+
+  .about-me__content__title h1 {
+    font-size: 22px;
+  }  
+
+  .about-me__content__description h3 {
+    font-size: 16px;
+  }
+
+  .about-me__content__button {
+    padding: 0 10px;
+  }
+
+  .about-me__photo__image{
+    width: 146px;
+    height: 146px;
+  }
+}
+
+@media (max-width: 570px) {
+  .about-me {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .about-me__content {
+    padding: 0 0 61px 0;
+  }
+
+  .about-me__photo {
+    order: -1;
+    margin: 0 auto;
+    padding: 61px 0 15px 0;
+  }
+
+  .about-me__photo__image {
+    width: 98px;
+    height: 98px;
+    border-radius: 50%;
+  }
+
+  .about-me__content {
+    align-items: center;
+    gap: 15px;
+  }
+
+  .about-me__content__title h1 {
+    font-size: 22px;
+  }
+
+  .about-me__content__description h3 {
+    font-size: 14px;
+  }
+
+  .about-me__content__buttons {
+    justify-content: center;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 0 8px;
+  }
+}

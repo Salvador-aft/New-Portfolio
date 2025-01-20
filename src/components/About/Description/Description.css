@@ -1,0 +1,45 @@
+.bio-section {
+  background-color: #EAF2FD;
+  border-radius: 8px;
+  width: 66%;
+  font-family: Arial, sans-serif;
+  padding: 32px 0 32px 0;
+}
+
+.bio-section__title {
+  font-size: 32px;
+  color: #333;
+  margin-bottom: 20px;
+  text-align: left;
+  font-family: 'Raleway', sans-serif;
+  font-weight: bold;
+}
+
+.bio-section__text {
+  font-size: 16px;
+  line-height: 1.8;
+  color: #555;
+  margin-bottom: 15px;
+  text-align: justify;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 100;
+}
+
+.bio-section__signature {
+  width: 150px;
+  display: block;
+}
+
+@media (max-width: 992px) {
+  .bio-section {
+    width: 100%;
+  }
+
+  .bio-section__title {
+    font-size: 22px;
+  }
+
+  .bio-section__text {
+    font-size: 14px;
+  }
+}

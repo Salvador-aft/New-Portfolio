@@ -1,0 +1,143 @@
+h2 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  text-align: center;
+  color: #333;
+}
+
+.experience-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 40px;
+  gap: 20px;
+}
+
+.experience-item.reverse {
+  flex-direction: row-reverse;
+}
+
+.experience-image-container {
+  flex: 0 0 auto;
+}
+
+.experience-image {
+  width: 900px;
+  height: 600px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.experience-content {
+  flex: 1;
+  padding: 20px;
+}
+
+.experience-content h3 {
+  font-family: 'Raleway', sans-serif;
+  font-weight: bold;
+  font-size: 22px;
+  color: #2A7AE4;
+  margin-bottom: 10px;
+}
+
+.experience-content p {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 100;
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.repo-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background: #2A7AE4;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  text-align: left;
+}
+
+.repo-button:hover {
+  background: #205A9A;
+}
+
+@media (max-width: 992px) {
+  .experience-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .experience-item.reverse {
+    flex-direction: column;
+  }
+
+  .experience-image-container {
+    width: 100%;
+  }
+
+  .experience-image {
+    width: 100%;
+    height: auto;
+  }
+
+  .experience-content {
+    padding: 0;
+    margin-top: 20px;
+  }
+
+  .experience-content h3 {
+    font-size: 16px;
+  }
+
+  .experience-content p {
+    font-size: 14px;
+  }
+
+  .experience-content h3,
+  .experience-content p,
+  .repo-button {
+    text-align: left;
+  }
+}
+
+@media (max-width: 768px) {
+  .experience-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .experience-item.reverse {
+    flex-direction: column;
+  }
+
+  .experience-image-container {
+    width: 100%;
+  }
+
+  .experience-image {
+    width: 100%;
+    height: auto;
+  }
+
+  .experience-content {
+    padding: 0;
+    margin-top: 20px;
+  }
+
+  .experience-content h3 {
+    font-size: 16px;
+  }
+
+  .experience-content p {
+    font-size: 14px;
+  }
+
+  .experience-content h3,
+  .experience-content p,
+  .repo-button {
+    text-align: left;
+  }
+}
