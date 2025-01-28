@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/New-Portfolio/static/css/main.bdf2c089.css",
+    "main.js": "/New-Portfolio/static/js/main.005300e1.js",
+    "static/js/488.94e76496.chunk.js": "/New-Portfolio/static/js/488.94e76496.chunk.js",
+    "static/media/project-Aluraflix.png": "/New-Portfolio/static/media/project-Aluraflix.4e28c00759181f5e40b7.png",
+    "static/media/project-miniecommerce.png": "/New-Portfolio/static/media/project-miniecommerce.4e3527268046ef7feb0c.png",
+    "static/media/ecommerce-project.jpg": "/New-Portfolio/static/media/ecommerce-project.5a40f477cc1c60dcab58.jpg",
+    "static/media/animation-project.jpg": "/New-Portfolio/static/media/animation-project.945ec53604bad2b546ee.jpg",
+    "static/media/CV-en-Salvador-Farias-Torres.pdf": "/New-Portfolio/static/media/CV-en-Salvador-Farias-Torres.6ec21c66fac0d78be97c.pdf",
+    "static/media/portfolio.jpg": "/New-Portfolio/static/media/portfolio.20af06a9b7856a328b32.jpg",
+    "static/media/Foto CV con Fondo.png": "/New-Portfolio/static/media/Foto CV con Fondo.4220363af8627f23e7b3.png",
+    "static/media/Contact.png": "/New-Portfolio/static/media/Contact.b7c1befbda4768387a1a.png",
+    "static/media/Alura-logo.png": "/New-Portfolio/static/media/Alura-logo.8a4eb9ac13084a818bff.png",
+    "static/media/UNAB-logo.jpg": "/New-Portfolio/static/media/UNAB-logo.d94cfb921f6c1ee77de4.jpg",
+    "static/media/TensorFlow_logo.png": "/New-Portfolio/static/media/TensorFlow_logo.234fcae8c394c611400b.png",
+    "static/media/signature.png": "/New-Portfolio/static/media/signature.762adc8a5ee86e02f981.png",
+    "index.html": "/New-Portfolio/index.html",
+    "main.bdf2c089.css.map": "/New-Portfolio/static/css/main.bdf2c089.css.map",
+    "main.005300e1.js.map": "/New-Portfolio/static/js/main.005300e1.js.map",
+    "488.94e76496.chunk.js.map": "/New-Portfolio/static/js/488.94e76496.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.bdf2c089.css",
+    "static/js/main.005300e1.js"
+  ]
+}
