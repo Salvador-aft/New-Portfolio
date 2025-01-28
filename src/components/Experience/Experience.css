@@ -5,7 +5,7 @@ h2 {
   color: #333;
 }
 
-.experience-item {
+.experience__item {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -13,27 +13,31 @@ h2 {
   gap: 20px;
 }
 
-.experience-item.reverse {
+.experience__item:last-child {
+  margin-bottom: 0;
+}
+
+.experience__item.reverse {
   flex-direction: row-reverse;
 }
 
-.experience-image-container {
+.experience__item__image-container {
   flex: 0 0 auto;
 }
 
-.experience-image {
+.experience__item__image-container__image {
   width: 900px;
   height: 600px;
   object-fit: cover;
   border-radius: 8px;
 }
 
-.experience-content {
+.experience__item__content {
   flex: 1;
   padding: 20px;
 }
 
-.experience-content h3 {
+.experience__item__content h3 {
   font-family: 'Raleway', sans-serif;
   font-weight: bold;
   font-size: 22px;
@@ -41,7 +45,7 @@ h2 {
   margin-bottom: 10px;
 }
 
-.experience-content p {
+.experience__item__content p {
   font-family: 'Raleway', sans-serif;
   font-weight: 100;
   font-size: 16px;
@@ -49,7 +53,7 @@ h2 {
   margin-bottom: 20px;
 }
 
-.repo-button {
+.experience__item__content__repo-button {
   display: inline-block;
   padding: 10px 20px;
   background: #2A7AE4;
@@ -60,84 +64,84 @@ h2 {
   text-align: left;
 }
 
-.repo-button:hover {
+.experience__item__content__repo-button:hover {
   background: #205A9A;
 }
 
 @media (max-width: 992px) {
-  .experience-item {
+  .experience__item {
     flex-direction: column;
     align-items: flex-start;
   }
 
-  .experience-item.reverse {
+  .experience__item.reverse {
     flex-direction: column;
   }
 
-  .experience-image-container {
+  .experience__item__image-container {
     width: 100%;
   }
 
-  .experience-image {
+  .experience__item__image-container__image {
     width: 100%;
     height: auto;
   }
 
-  .experience-content {
+  .experience__item__content {
     padding: 0;
     margin-top: 20px;
   }
 
-  .experience-content h3 {
+  .experience__item__content h3 {
     font-size: 16px;
   }
 
-  .experience-content p {
+  .experience__item__content p {
     font-size: 14px;
   }
 
-  .experience-content h3,
-  .experience-content p,
-  .repo-button {
+  .experience__item__content h3,
+  .experience__item__content p,
+  .experience__item__content__repo-button {
     text-align: left;
   }
 }
 
 @media (max-width: 768px) {
-  .experience-item {
+  .experience__item {
     flex-direction: column;
     align-items: flex-start;
   }
 
-  .experience-item.reverse {
+  .experience__item.reverse {
     flex-direction: column;
   }
 
-  .experience-image-container {
+  .experience__item__image-container {
     width: 100%;
   }
 
-  .experience-image {
+  .experience__item__image-container__image {
     width: 100%;
     height: auto;
   }
 
-  .experience-content {
+  .experience__item__content {
     padding: 0;
     margin-top: 20px;
   }
 
-  .experience-content h3 {
+  .experience__item__content h3 {
     font-size: 16px;
   }
 
-  .experience-content p {
+  .experience__item__content p {
     font-size: 14px;
   }
 
-  .experience-content h3,
-  .experience-content p,
-  .repo-button {
+  .experience__item__content h3,
+  .experience__item__content p,
+  .experience__item__content__repo-button {
     text-align: left;
   }
 }

@@ -15,85 +15,69 @@ function App() {
   return (
     <div className="App">
       <Container fluid className="p-0">
-        <header>
+        <header className="default-wrapper">
           <Row>
-            <Col xs={1} md={1} lg={1} className="p-0 empty-col"></Col>
-            <Col xs={10} md={10} lg={10} className="p-0">
+            <Col className="content-column p-0">
               <Header />
             </Col>
-            <Col xs={1} md={1} lg={1} className="p-0 empty-col"></Col>
           </Row>
         </header>
 
         <main>
-          <section>
+          <section id="about-section" className="default-wrapper">
             <Row>
-              <Col xs={1} md={1} lg={1} className="p-0 empty-col"></Col>
-              <Col xs={10} md={10} lg={10} className="p-0">
+              <Col className="content-column p-0">
                 <AboutMe />
               </Col>
-              <Col xs={1} md={1} lg={1} className="p-0 empty-col"></Col>
             </Row>
           </section>
 
-          <section className="blue-wrapper">
+          <section id="bio-section" className="blue-wrapper">
             <Row>
-              <Col xs={1} md={1} lg={1} className="p-0 empty-col"></Col>
-              <Col xs={10} md={10} lg={10} className="p-0">
+              <Col className="content-column p-0">
                 <BioSection />
               </Col>
-              <Col xs={1} md={1} lg={1} className="p-0 empty-col"></Col>
             </Row>
           </section>
 
-          <section>
+          <section id="stacks-section" className="default-wrapper">
             <Row>
-              <Col xs={1} md={1} lg={1} className="p-0 empty-col"></Col>
-              <Col xs={10} md={10} lg={10} className="p-0">
+              <Col className="content-column p-0">
                 <Stacks />
               </Col>
-              <Col xs={1} md={1} lg={1} className="p-0 empty-col"></Col>
             </Row>
           </section>
 
-          <section className='blue-wrapper'>
+          <section id="education-section" className="blue-wrapper">
             <Row>
-              <Col xs={1} md={1} lg={1} className="p-0 empty-col"></Col>
-              <Col xs={10} md={10} lg={10} className="p-0">
+              <Col className="content-column p-0">
                 <Education />
               </Col>
-              <Col xs={1} md={1} lg={1} className="p-0 empty-col"></Col>
             </Row>
           </section>
 
-          <section>
+          <section id="projects-section" className="default-wrapper">
             <Row>
-              <Col xs={1} md={1} lg={1} className="p-0 empty-col"></Col>
-              <Col xs={10} md={10} lg={10} className="p-0">
+              <Col className="content-column p-0">
                 <Experience />
               </Col>
-              <Col xs={1} md={1} lg={1} className="p-0 empty-col"></Col>
             </Row>
           </section>
 
-          <section className='blue-wrapper'>
+          <section id="contact-section" className="blue-wrapper">
             <Row>
-              <Col xs={1} md={1} lg={1} className="p-0 empty-col"></Col>
-              <Col xs={10} md={10} lg={10} className="p-0">
+              <Col className="content-column p-0">
                 <Contact />
               </Col>
-              <Col xs={1} md={1} lg={1} className="p-0 empty-col"></Col>
             </Row>
           </section>
         </main>
 
-        <footer>
+        <footer className="footer-wrapper">
           <Row>
-            <Col xs={1} md={1} lg={1} className="p-0 empty-col"></Col>
-            <Col xs={10} md={10} lg={10} className="p-0">
+            <Col className="content-column footer-row p-0">
               <Footer />
             </Col>
-            <Col xs={1} md={1} lg={1} className="p-0 empty-col"></Col>
           </Row>
         </footer>
       </Container>

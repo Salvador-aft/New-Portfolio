@@ -1,60 +1,62 @@
+/* 1. Eliminar márgenes y paddings globales */
 body {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
+  background-color: #EDEDED; /* Color de fondo general */
 }
 
+/* 2. Configurar los sections para ocupar todo el ancho */
+section {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* 3. Color específico para blue-wrapper */
+.blue-wrapper {
+  background-color: #EAF2FD; /* Color de fondo de las secciones "azules" */
+  padding: 60px 0;
+}
+
+/* 4. Color específico para default-wrapper */
+.default-wrapper {
+  background-color: #EDEDED; /* Color de fondo para las demás secciones */
+}
+
+/* 5. Ajustar el contenedor principal */
 .container-fluid {
   max-width: 100%;
   margin: 0 auto;
   padding: 0;
 }
 
-.App {
-  padding: 0;
-}
-
-.empty-col {
-  flex: 1;
-  visibility: hidden;
-  background-color: inherit;
-}
-
-.blue-wrapper {
-  background-color: #EAF2FD;
-  color: #fff;
-}
-
+/* 6. Añadir padding a los rows (contenido interno) */
 .row {
-  margin-bottom: 30px;
+  margin: 32px auto;
+  padding: 0 100px; /* Padding para escritorio */
+  box-sizing: border-box;
+}
+
+.footer-wrapper {
+  background-color: #ffffff; /* Fondo blanco */
+  padding: 32px 0; /* Añade espacio interno para mantener el diseño */
+}
+
+footer .row {
+  margin: 0; /* Sin márgenes en filas dentro del footer */
+}
+
+
+/* 7. Responsividad */
+@media (max-width: 992px) {
+  .row {
+    padding: 0 50px; /* Reducimos padding en tablet */
+  }
 }
 
 @media (max-width: 768px) {
-  .empty-col {
-    flex: 0.5;
-  }
-
   .row {
-    display: flex;
-    margin: 0 0 20px 0;
+    padding: 0 20px; /* Reducimos aún más el padding en móvil */
+    margin: 16px auto;
   }
-
-  .App {
-    padding: 0 10px;
-  }
-}
-
-@media (min-width: 768px) and (max-width: 1024px) {
-  .empty-col {
-    flex: 1;
-  }
-
-  .App {
-    padding: 0 20px;
-  }
-}
-
-.main-col {
-  padding: 0;
-  margin: 0 auto;
 }

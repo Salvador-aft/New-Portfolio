@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-scroll';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './Header.css';
 import logo from '../../assets/images/Group.png';
@@ -24,31 +25,35 @@ function Header() {
           Salvador Farias Torres
         </p>
       </div>
-      <nav 
-        className="header__right d-flex justify-content-end align-items-center" 
-        style={{ gap: '32px'}}
+      <nav
+        className="header__right d-flex justify-content-end align-items-center"
+        style={{ gap: '32px' }}
       >
         <div className="header__right__buttons d-flex">
-          {["About", "Skills", "Education", "Projects"].map((label, index) => (
-            <button
+          {[{ label: 'About', to: 'about-section' },
+            { label: 'Stacks', to: 'stacks-section' },
+            { label: 'Education', to: 'education-section' },
+            { label: 'Experience', to: 'projects-section' },
+            { label: 'Contact', to: 'contact-section' },
+          ].map(({ label, to }, index) => (
+            <Link
               key={index}
-              className={`header__right__button btn ${index !== 3 ? 'mr-3' : ''}`}
-              style={{
-                fontSize: '16px',
-                fontWeight: '100',
-                fontFamily: 'Raleway, sans-serif',
-              }}
+              to={to}
+              spy={true}
+              smooth={true}
+              duration={500}
+              className="header__right__buttons__button"
             >
               {label}
-            </button>
+            </Link>
           ))}
         </div>
-        <div 
-          className="header__right__email" 
-          style={{ fontSize: '16px', fontWeight: 'bold', fontFamily: 'Raleway, sans-serif', color: '#000' }}
+        <a
+          href="mailto:salvadorfarias2010@gmail.com"
+          className="header__right__email"
         >
           salvadorfarias2010@gmail.com
-        </div>
+        </a>
       </nav>
     </div>
   );

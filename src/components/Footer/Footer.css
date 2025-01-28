@@ -2,12 +2,10 @@
     background-color: white;
     color: black;
     text-align: center;
-    padding: 20px 0;
     margin: 0;
     font-family: 'Raleway', sans-serif;
     font-weight: 500;
     font-size: 16px;
-    border-top: 1px solid #ccc;
   }
   
   .footer p {

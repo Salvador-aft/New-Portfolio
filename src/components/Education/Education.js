@@ -23,14 +23,14 @@ function Education() {
   return (
     <section className="education">
       <h2>Education</h2>
-      <div className="education-container">
+      <div className="education__container">
         {educationData.map((item, index) => (
-          <article className="education-item" key={index}>
-            <div className="education-logo-container">
-              <img src={item.logo} alt={item.title} className="education-logo" />
+          <article className="education__container__education-item" key={index}>
+            <div className="education__container__education-item__education-logo-container">
+              <img src={item.logo} alt={item.title} className="education__container__education-item__education-logo-container__education-logo" />
             </div>
-            <p className="education-title">{item.title}</p>
-            <p className="education-date">{item.date}</p>
+            <p className="education__container__education-item__education-title">{item.title}</p>
+            <p className="education__container__education-item__education-title__education-date">{item.date}</p>
           </article>
         ))}
       </div>

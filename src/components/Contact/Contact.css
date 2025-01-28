@@ -1,34 +1,33 @@
-.contact-container {
+.contact {
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding: 64px 0 0;
-  gap: 36px;
+  gap: 3.5vh;
   width: 100%;
   height: 660px;
   margin: 0 auto;
 }
 
-.contact-image {
+.contact__image {
   width: 40%;
   height: 100%;
   object-fit: cover;
   flex: 0 0 40%;
 }
 
-.contact-form-container {
+.contact__form {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   padding: 0;
-  gap: 48px;
+  gap: 3.5vh;
   width: 50%;
   height: 100%;
   flex: 0 0 50%;
   flex-grow: 1;
 }
 
-.contact-title {
+.contact__form__title {
   width: 100%;
   font-family: 'Raleway', sans-serif;
   font-style: normal;
@@ -39,7 +38,7 @@
   margin: 0;
 }
 
-.contact-subtitle {
+.contact__form__subtitle {
   width: 100%;
   font-family: 'Raleway', sans-serif;
   font-style: normal;
@@ -50,26 +49,26 @@
   margin: 0;
 }
 
-.contact-form {
+.contact__form__form {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   padding: 0;
-  gap: 18px;
+  gap: 3.5vh;
   width: 100%;
   height: 100%;
   margin: 0;
 }
 
-.input-container {
+.contact__form__form__input-container{
   position: relative;
   width: 100%;
 }
 
-.contact-input,
-.contact-textarea {
+.contact__form__form__input-container__contact-input,
+.contact__form__form__input-container__contact-textarea {
   width: 100%;
-  padding: 20px 16px 8px;
+  padding: 20px 16px 16px;
   font-size: 16px;
   font-family: 'Raleway', sans-serif;
   border: 1px solid #ccc;
@@ -78,32 +77,32 @@
   margin: 0;
 }
 
-.contact-input:focus,
-.contact-textarea:focus {
+.contact__form__form__input-container__contact-input:focus,
+.contact__form__form__input-container__contact-textarea:focus {
   border-color: #2a7ae4;
   box-shadow: 0 0 4px #2a7ae4;
 }
 
-.contact-input::placeholder,
-.contact-textarea::placeholder {
+.contact__form__form__input-container__contact-input::placeholder,
+.contact__form__form__input-container__contact-textarea::placeholder {
   color: transparent;
 }
 
-.contact-input:focus::placeholder,
-.contact-textarea:focus::placeholder {
+.contact__form__form__input-container__contact-input:focus::placeholder,
+.contact__form__form__input-container__contact-textarea:focus::placeholder {
   color: transparent;
 }
 
-.contact-input:focus + .contact-label,
-.contact-textarea:focus + .contact-label,
-.contact-input:not(:placeholder-shown) + .contact-label,
-.contact-textarea:not(:placeholder-shown) + .contact-label {
+.contact__form__form__input-container__contact-input:focus + .contact__form__form__input-container__contact-label,
+.contact__form__form__input-container__contact-textarea:focus + .contact__form__form__input-container__contact-label,
+.contact__form__form__input-container__contact-input:not(:placeholder-shown) + .contact__form__form__input-container__contact-label,
+.contact__form__form__input-container__contact-textarea:not(:placeholder-shown) + .contact__form__form__input-container__contact-label {
   transform: translateY(-16px);
   font-size: 12px;
   color: #2a7ae4;
 }
 
-.contact-label {
+.contact__form__form__input-container__contact-label {
   position: absolute;
   top: 20px;
   left: 16px;
@@ -114,7 +113,7 @@
   transition: all 0.2s ease;
 }
 
-.contact-button {
+.contact__form__form__contact-button {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -132,39 +131,39 @@
   margin: 0;
 }
 
-.contact-button:hover {
+.contact__form__form__contact-button:hover {
   background: #0056b3;
 }
 
 @media (max-width: 992px) {
-  .contact-container {
+  .contact {
     flex-direction: column;
     align-items: center;
-    gap: 16px;
+    gap: 1vh;
   }
 
-  .contact-image {
+  .contact__image {
     display: none;
   }
 
-  .contact-form-container {
+  .contact__form {
     width: 100%;
     margin-bottom: 0;
   }
 }
 
 @media (max-width: 576px) {
-  .contact-container {
+  .contact {
     flex-direction: column;
     align-items: center;
-    gap: 16px;
+    gap: 1vh;
   }
 
-  .contact-image {
+  .contact__image {
     display: none;
   }
 
-  .contact-form-container {
+  .contact__form {
     width: 100%;
     margin-bottom: 0;
   }

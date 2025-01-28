@@ -4,22 +4,54 @@
   font-weight: bold;
 }
 
-.header__right__buttons  {
+.header__right__buttons {
+  display: flex;
+  gap: 16px; /* Espacio entre botones */
+}
+
+.header__right__buttons__button {
   border: none;
   background: none;
   color: #7f7e7e;
-  font-size: 14px;
-  font-weight: bold;
+  font-size: 16px;
+  font-weight: 600;
   cursor: pointer;
+  text-decoration: none;
+  transition: color 0.3s ease;
 }
 
-.header__right__buttons:hover {
+.header__right__buttons__button:hover {
   color: #000;
+}
+
+.header__right__email {
+  font-size: 16px;
+  font-weight: bold;
+  font-family: 'Raleway', sans-serif;
+  color: #000;
+  text-decoration: none;
   transition: color 0.3s ease;
+}
+
+.header__right__email:hover {
+  color: #0056b3;
+  text-decoration: underline;
+}
+
+
+.header__right__buttons__button:focus {
+  outline: none;
 }
 
 @media (max-width: 992px) {
   .header__right__buttons {
     display: none !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .header__right__email {
+    font-size: 14px;
+    font-weight: 400;
   }
 }
